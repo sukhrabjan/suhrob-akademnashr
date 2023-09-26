@@ -231,7 +231,7 @@ body {
 }
 
 .promo {
-
+  margin-bottom: 160px;
   display: flex;
   justify-content: space-between;
   padding-top: 64px;
@@ -279,3 +279,35 @@ body {
   line-height: 150%;
   letter-spacing: 0.5px;
 }
+
+.footer { 
+  padding-top: 56px;
+  padding-bottom: 40px;
+  background-color: #F8F8F8;
+}
+
+.footer__small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border-bottom: 2px solid  rgba(37, 36, 32, 0.50);
+  padding-bottom: 40px;
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer__line {
+ width: 110%;
+ max-width: 1100px;
+  height: 2px;
+  flex-shrink: 0;
+  background: rgba(37, 36, 32, 0.50);
+}
+
