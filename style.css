@@ -55,11 +55,11 @@ body {
 }
 
 .header__img:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .header__img:active {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .header__ul {
@@ -131,11 +131,11 @@ body {
 }
 
 .button:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .button:active {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .section {
@@ -358,11 +358,11 @@ body {
 }
 
 .footer__wrapper__img:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .footer__wrapper__img:active {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .footer__link {
