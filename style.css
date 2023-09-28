@@ -46,7 +46,15 @@ body {
 
 .header__img {
   width: 227px;
+  transition: opacity 0.4s ease;
   height: 60px;
+}
+
+.header__img:hover {
+  opacity: 0.6;
+}
+.header__img:active{
+  opacity: 0.8;
 }
 
 .header__ul {
@@ -67,15 +75,29 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 0;
+  transition: border-bottom 0.4s ease padding-bottom 0.4s ease;
 }
 
 .header__item:not(:last-child) {
   margin-right: 32px;
 }
 
+.header__item:nth-child(1) {
+  border-bottom: 2px solid #FF7500;
+}
+
 .header__link {
+  transition: color 0.4s ease ,
+  opacity 0.4s ease;
   text-decoration: none;
   color: #000;
+}
+
+.header__link:hover {
+  color: #FF7500;
+}
+.header__link:active{
+  opacity: 0.6;
 }
 
 .button {
@@ -91,6 +113,14 @@ body {
   letter-spacing: 0.5px;
   border-radius: 4px;
   background: #FF7500;
+  transition: opacity 0.4s ease;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+.button:active{
+  opacity: 0.8;
 }
 
 .section {
@@ -280,16 +310,37 @@ body {
   letter-spacing: 0.5px;
 }
 
-.footer { 
+.footer {
   padding-top: 56px;
   padding-bottom: 40px;
   background-color: #F8F8F8;
 }
 
+.footer__wrapper__img {
+  transition: opacity 0.4s ease;
+}
 
+.footer__wrapper__img:hover {
+  opacity: 0.6;
+}
+
+.footer__wrapper__img:active{
+  opacity: 0.8;
+}
 
 .footer__link {
   text-decoration: none;
+  color: #000;
+  transition: color 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.footer__link:hover {
+  color: #FF7500;
+}
+
+.footer__link:active {
+  opacity: 0.6;
 }
 
 .footer__link:not(:last-child) {
@@ -303,21 +354,22 @@ body {
   height: 2px;
   background: rgba(37, 36, 32, 0.5);
 }
-.footer__small{
+
+.footer__small {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
   justify-content: space-between;
 }
 
-.ul-wrapper {
+.ul__wrapper {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   width: 100%;
   max-width: 224px;
   margin: 0;
@@ -328,14 +380,14 @@ body {
   margin-right: 68px;
 }
 
-.footer-li-wrapper {
+.footer__li__wrapper {
   margin: 0;
   padding: 0;
   margin-bottom: 16px;
   list-style-type: none;
 }
 
-.footer-link-wrapper {
+.footer__link__wrapper {
   transition: opacity 0.4s ease,
     color 0.4s ease;
   text-decoration: none;
@@ -345,4 +397,12 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #252420;
+}
+
+.footer__link__wrapper:hover {
+  color: #FF7500;
+}
+
+.footer__link__wrapper:active {
+  opacity: 0.6;
 }
